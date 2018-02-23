@@ -9,7 +9,7 @@ $(document).ready(function(){
         $("#hughGrant").remove();
         
             
-        if (("#you").src.length > 0) {
+        if (("#you").attr.src.length > 0) {
             $("#opponent").attr("src", "assets/hughGrant.jpg");
         }
       
