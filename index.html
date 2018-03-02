@@ -9,35 +9,63 @@
     <style>
     button {
         width: 70px;}
-    #characters {margin-top: 100px;}    
+   
+    #characters {margin-top: 100px;
+
+                width: 100%;}    
     #header {text-align: right;
             margin-right: 75px;
             margin-top: 25px;}
-    img {height: 200px;
-        width: 200px;}
+    img {height: 150px;
+       
+        width: 150px;}
     
+
+   
+
+    #you {margin-top: 15px;}
+
     </style>
     <title>Loathe Actually</title>
 </head>
 <body>
     <div id="header"><h1>Love Actually RPG</h1></div>
-    <div id="characters">
-            <img id="alanRickman" src="assets/alanRickman.jpg">
-            <img id="hughGrant" src="assets/hughGrant.jpg">
-            <img id="characterThree" src="http://via.placeholder.com/200x200">
-            <img id="characterFour" src="http://via.placeholder.com/200x200">
-         </div>
+    <table id="characters">
+       <tr>
+           <td class="rickman">30</td>
+           <td class="grant">35</td>
+           <td class="neeson">40</td>
+       </tr>
+       <tr>
+            <td id="alanRickman"><img src="assets/alanRickman.jpg"></td>
+            <td id="hughGrant"><img src="assets/hughGrant.jpg"></td>
+            <td id="liamNeeson" ><img src="assets/liamNeeson.jpg"></td>
+       </tr>
+    <tr>
+        <td class="rickman">Alan Rickman</td>
+        <td class="grant">Hugh Grant</td>
+        <td class="neeson">Liam Neeson</td>
+    </tr>
+            
+    </table>
         
          <h2>Your Character</h2>
-         <img id="you">
+         <div id="you">
+             <img id="youPhoto">
+             <p id="yourLife"></p>
+         </div>
+         
 
          <br><br>
          
         
-             <button type="button" value="Attack">Attack</button>
+             <button id="attack" type="button">Attack</button>
 
              <h2>Your Opponent</h2>
-             <img id="opponent">
+             <div id="opponent">
+                <img id="opponentPhoto">
+                <p id="opponentLife"></p>
+            </div>
        
 </body>
 </html>
